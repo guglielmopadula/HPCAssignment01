@@ -1,0 +1,41 @@
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+df = read.table(args[1], header=TRUE, sep=",",check.names = FALSE)
+library(mgcv)
+x=df[,1]
+y=df[,3]
+z=df[,4]
+k=y[1]
+y=y-k
+latency=lm(y~x-1)
+yf=fitted(latency)+k
+bandwith2=gam(z~s(x,k = -1, bs = "cs"))
+lx=log(x[-1])
+n=length(lx)
+z2=z[-1]
+xplot=lx[1]+((0:10000)/10000)*(lx[n]-lx[1])
+dataplot=data.frame(lx=xplot)
+bandwith=gam(z2~s(lx,k = -1, bs = "cs"))
+zplot=predict(bandwith,newdata=dataplot)
+zf=fitted(bandwith2)
+yf=as.numeric(format(round(yf, 2), nsmall = 2))
+df$"t[usec] (estimated)"=yf
+zf=as.numeric(format(round(zf, 2), nsmall = 2))
+df$"Mbytes/sec (estimated)"=zf
+write.table(df,args[1],row.names = FALSE, sep=" ")
+temp=sub('\\.csv$', '', args[1])
+str1a=gsub(" ","",paste('graph-speed-',paste(temp,'.jpeg')))
+str2a=gsub(" ","",paste('graph-time-',paste(temp,'.jpeg')))
+options(bitmapType='cairo')
+jpeg(str2a,width = 1000, height = 1000, res=200)
+plot(x, y, xlab="packages sent", ylab="latency ",type="p", pch=19, col="red")
+lines(x,yf, col='blue', type="l", lty=1)
+legend(x="topleft",legend=c("observations","fit"),col=c("red","blue"),lty=c(NA,1),pch=c(19,NA))
+dev.off();
+graphics.off()
+options(bitmapType='cairo')
+jpeg(str1a,width = 1000, height = 1000, res=200)
+plot(lx, z2, xlab="packages sent (log)", ylab="speed",type="p", pch=19, col="red")
+lines(xplot,zplot,col='blue', type="l", lty=1)
+legend(x="topleft",legend=c("observations","fit"),col=c("red","blue"),lty=c(NA,1),pch=c(19,NA))
+dev.off();

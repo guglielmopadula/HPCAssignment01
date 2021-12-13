@@ -1,0 +1,16 @@
+#!/usr/bin/env Rscript
+df = read.table("cache.csv", header=FALSE, sep=",",check.names = FALSE)
+x=df[,1]
+y=df[,2]
+ynew=y
+for (i in 2:length(y))
+{
+	ynew[i]=y[i]-y[i-1];	
+}
+x=x[-1];
+ynew=ynew[-1];
+options(bitmapType='cairo')
+jpeg("cache.jpeg")
+plot(x, ynew, log="x", xlab="argument of -msglog", ylab="cache references ", type="p", pch=19, col="red")
+legend(x="topleft",legend=c("observations"),col=c("red"),pch=19)
+
