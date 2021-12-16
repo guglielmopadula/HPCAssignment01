@@ -43,9 +43,9 @@ do
 							lat2=$(awk 'NR==25 {print $5}' openmpi-$comp-$map-$eth-$pml-$btl.csv) 
                                                         band=$(awk "BEGIN {print 2097152/(($lat2)-($lat1))}")
 							sed -e 's/\s\+/,/g' openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
-							cat <(echo "latency:$lat,bandwith:$band") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv					
-							cat <(echo "$node1,$node2") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
-							cat <(echo "mpirun -np 2 --mca pml $pml --report-bindings -map-by $map  --mca btl $btl,self --mca btl_$btl_if_include $eth ./IMB_$comp PingPong -msglog 28 -iter 100 -iter_policy multiple_np -off_cache -1  ") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
+							cat <(echo "#header_line_3: latency:$lat,bandwith:$band") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv					
+							cat <(echo "#header_line_2: $node1,$node2") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
+							cat <(echo "#header_line_1: mpirun -np 2 --mca pml $pml --report-bindings -map-by $map  --mca btl $btl,self --mca btl_$btl_if_include $eth ./IMB_$comp PingPong -msglog 28 -iter 100 -iter_policy multiple_np -off_cache -1  ") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
 							echo "openmpi,$comp,$map,$eth,$pml,$btl,$band,$lat">>section2.csv
 
 						fi
@@ -69,9 +69,9 @@ do
 							lat2=$(awk 'NR==25 {print $5}' openmpi-$comp-$map-$eth-$pml-$btl.csv) 
                                                         band=$(awk "BEGIN {print 2097152/(($lat2)-($lat1))}")
 							sed -e 's/\s\+/,/g' openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
-							cat <(echo "latency:$lat,bandwith:$band") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv					
-							cat <(echo "$node1,$node2") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
-							cat <(echo "mpirun -np 2 --mca pml $pml --report-bindings -map-by $map  --mca btl $btl,self --mca btl_$btl_if_include $eth ./IMB_$comp PingPong -msglog 28 -iter 100 -iter_policy multiple_np -off_cache -1  ") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
+							cat <(echo "#header_line_3: latency:$lat,bandwith:$band") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv					
+							cat <(echo "#header_line_2: $node1,$node2") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
+							cat <(echo "#header_line_1: mpirun -np 2 --mca pml $pml --report-bindings -map-by $map  --mca btl $btl,self --mca btl_$btl_if_include $eth ./IMB_$comp PingPong -msglog 28 -iter 100 -iter_policy multiple_np -off_cache -1  ") openmpi-$comp-$map-$eth-$pml-$btl.csv > temp && mv temp openmpi-$comp-$map-$eth-$pml-$btl.csv
 							echo "openmpi,$comp,$map,$eth,$pml,$btl,$band,$lat">>section2.csv
 
 						fi
@@ -123,9 +123,9 @@ do
         lat2=$(awk 'NR==25 {print $5}' intel-shm-shm-$a.csv)
         band=$(awk "BEGIN {print 2097152/(($lat2)-($lat1))}")
         sed -e 's/\s\+/,/g' intel-shm-shm-$a.csv > temp && mv temp intel-shm-shm-$a.csv
-	cat <(echo "latency:$lat,bandwith:$band") intel-shm-shm-$a.csv > temp && mv temp intel-shm-shm-$a.csv				
-	cat <(echo "$node1,$node2") intel-shm-shm-$a.csv > temp && mv temp intel-shm-shm-$a.csv
-	cat <(echo "mpirun -np 2  -env I_MPI_DEBUG 5 -env I_MPI_FABRICS shm  -genv I_MPI_PIN_PROCESSOR_LIST 0,i  ./IMB_intel-gcc PingPong -msglog 28 -iter 100 -iter_policy multiple_np -off_cache -1 ") intel-shm-shm-$a.csv > temp && mv temp intel-shm-shm-$a.csv
+	cat <(echo "#header_line_3: latency:$lat,bandwith:$band") intel-shm-shm-$a.csv > temp && mv temp intel-shm-shm-$a.csv				
+	cat <(echo "#header_line_2: $node1,$node2") intel-shm-shm-$a.csv > temp && mv temp intel-shm-shm-$a.csv
+	cat <(echo "#header_line_1: mpirun -np 2  -env I_MPI_DEBUG 5 -env I_MPI_FABRICS shm  -genv I_MPI_PIN_PROCESSOR_LIST 0,i  ./IMB_intel-gcc PingPong -msglog 28 -iter 100 -iter_policy multiple_np -off_cache -1 ") intel-shm-shm-$a.csv > temp && mv temp intel-shm-shm-$a.csv
 	echo "intelmpi,intel,$a,none,shm,none,$band,$lat">> section2.csv
 	for b in 'shm' 'sockets' 'tcp' 'mlx'       
 	do
@@ -159,9 +159,9 @@ do
                 lat2=$(awk 'NR==25 {print $5}' intel-ofi-$b-$a.csv)
                 band=$(awk "BEGIN {print 2097152/(($lat2)-($lat1))}")
                 sed -e 's/\s\+/,/g' intel-ofi-$b-$a.csv > temp && mv temp intel-ofi-$b-$a.csv
-        	cat <(echo "latency:$lat,bandwith:$band") intel-ofi-$b-$a.csv > temp && mv temp intel-ofi-$b-$a.csv
-        	cat <(echo "$node1,$node2") intel-ofi-$b-$a.csv > temp && mv temp intel-ofi-$b-$a.csv
-		cat <(echo "mpirun -np 2  -env I_MPI_DEBUG 5 -env I_MPI_FABRICS ofi -env I_MPI_OFI_PROVIDER $b  -genv I_MPI_PIN_PROCESSOR_LIST 0,$i ./IMB_intel-gcc -msglog 28 -iter 100 -iter_policy multiple_np -off_cache -1 ") intel-ofi-$b-$a.csv > temp && mv temp intel-ofi-$b-$a.csv 
+        	cat <(echo "#header_line_3: latency:$lat,bandwith:$band") intel-ofi-$b-$a.csv > temp && mv temp intel-ofi-$b-$a.csv
+        	cat <(echo "#header_line_2: $node1,$node2") intel-ofi-$b-$a.csv > temp && mv temp intel-ofi-$b-$a.csv
+		cat <(echo "#header_line_1: mpirun -np 2  -env I_MPI_DEBUG 5 -env I_MPI_FABRICS ofi -env I_MPI_OFI_PROVIDER $b  -genv I_MPI_PIN_PROCESSOR_LIST 0,$i ./IMB_intel-gcc -msglog 28 -iter 100 -iter_policy multiple_np -off_cache -1 ") intel-ofi-$b-$a.csv > temp && mv temp intel-ofi-$b-$a.csv 
 		echo "intelmpi,intel,$a,$eth,ofi,$b,$band,$lat">> section2.csv
 	done
 done
