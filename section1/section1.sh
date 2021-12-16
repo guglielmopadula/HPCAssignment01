@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /fast/dssc/2021Assignment01/gpadula/section1
+cd /fast/dssc/gpadula/2021Assignment01/section1
 rm *.csv
 rm *.jpeg
 rm ring

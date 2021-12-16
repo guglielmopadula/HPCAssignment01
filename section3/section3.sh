@@ -2,7 +2,7 @@
 #Notare che jacobi assegna il primo input a z, il secondo a y e il terzo a x
 #tr -s ' '  '\n'< jacobi-socket-12.txt > temp
 
-cd /fast/dssc/2021Assignment01/gpadula/section3
+cd /fast/dssc/gpadula/2021Assignment01/section3
 module load openmpi-4.1.1+gnu-9.3.0
 module load R
 socket=(4 8 12)

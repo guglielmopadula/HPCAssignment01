@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /fast/dssc/2021Assignment01/gpadula/section2
+cd /fast/dssc/gpadula/2021Assignment01/section2
 sort $PBS_NODEFILE | uniq -d > nodes.txt
 node1=$(awk 'NR==1{print $1; exit}' nodes.txt)
 node2=$(awk 'NR==2{print $1; exit}' nodes.txt)
