@@ -1,0 +1,119 @@
+/var/spool/pbs/mom_priv/jobs/54585.login.hpc.SC: line 2: /fast/dssc/gpadula/2021Assignment01/section1: Is a directory
+rm: cannot remove ‘pythonvscpp.csv’: No such file or directory
+loading dependency gnu/9.3.0
+loading dependency numactl/2.0.13
+loading dependency hwloc/2.2.0
+g++: error: summatrix.cc: No such file or directory
+g++: error: ring.cc: No such file or directory
+g++: error: summatrixfast.cc: No such file or directory
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./ring
+Node: ct1pt-tnode009
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+python: can't open file 'ring.py': [Errno 2] No such file or directory
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./summatrixfast
+Node: ct1pt-tnode009
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+python: can't open file 'summatrixfast.py': [Errno 2] No such file or directory
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./summatrix
+Node: ct1pt-tnode009
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory
+python: can't open file 'summatrix.py': [Errno 2] No such file or directory

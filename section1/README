@@ -10,6 +10,9 @@ Compiling is done by mpic++ ring.cc -o ring -std=c++11
 
 Running is done by  mpirun -np "number of processor"  ./ring.
 
+Running part for the python version is done by mpirun -np "number of processor"  python ring.py, from a conda enviroment in which all necessary modules are installed.
+
+
 MATRIX PART
 
 Compiling is done by mpic++ summatrix.cc -o summatrix -std=c++11 and by mpic++ summatrixfast.cc -o summatrixfast -std=c++11 
@@ -27,3 +30,8 @@ mpirun -np 24 ./summatrix 1200 200 100 2 6 4 creates a 2D 6x4 topology and two m
 Note that the total size of the topology must be the number of processors specifed in -np.
 
 Running for summatrixfast is done by mpirun -np 24 ./summatrix size1 size2 size3
+
+
+For the python versions commands are mpirun -np 24 python summatrix.py size1 size2 size3 ndimtopology size1top size2top size3top
+and mpirun -np 24 python summatrix.py size1 size2 size3
+

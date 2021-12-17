@@ -1,0 +1,348 @@
+loading dependency gnu/9.3.0
+loading dependency numactl/2.0.13
+loading dependency hwloc/2.2.0
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   ct1pt-tnode009
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[ct1pt-tnode009:01526] 23 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[ct1pt-tnode009:01526] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+  File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                               File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                           File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                   File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                        File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                         File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                           File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                                          File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                                                   File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                                                    ^
+SyntaxError:   File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                              File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                                                    ^
+SyntaxError: invalid syntax
+  File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                                                                                                                          ^
+SyntaxError: invalid syntax
+                                           ^
+SyntaxError: invalid syntax
+                                                   ^
+SyntaxError: invalid syntax
+                              ^
+SyntaxError: invalid syntax
+                             ^
+SyntaxError: invalid syntax
+                           ^
+SyntaxError: invalid syntax
+            ^
+SyntaxError: invalid syntax
+                                      ^
+SyntaxError: invalid syntax
+   ^
+SyntaxError: invalid syntax
+invalid syntax
+  File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                          File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+ ^
+SyntaxError: invalid syntax
+  File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                         File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                            ^
+SyntaxError: invalid syntax
+                                    ^
+SyntaxError: invalid syntax                                           
+                                                                                                                      ^
+SyntaxError:                                                                          File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                         File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+         invalid syntax
+                                      ^
+SyntaxError: invalid syntax
+                                                                                                                                                         File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                         ^
+SyntaxError: invalid syntax
+                                                                         ^
+SyntaxError: invalid syntax                           
+                                                       ^
+SyntaxError: invalid syntax
+  File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                            File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                       ^
+SyntaxError:               invalid syntax
+                                                                                                         ^
+SyntaxError: invalid syntax
+  File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                                                    ^
+SyntaxError: invalid syntax
+  File "ring.py", line 40
+    print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
+                                                                                                                                                                                    ^
+SyntaxError: invalid syntax
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[63145,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   ct1pt-tnode009
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[ct1pt-tnode009:01862] 23 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[ct1pt-tnode009:01862] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrixfast.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[63533,1],2]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   ct1pt-tnode009
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[ct1pt-tnode009:02256] 23 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[ct1pt-tnode009:02256] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+Traceback (most recent call last):
+  File "summatrix.py", line 1, in <module>
+    from mpi4py import MPI
+ImportError: No module named mpi4py
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[63936,1],2]
+  Exit code:    1
+--------------------------------------------------------------------------

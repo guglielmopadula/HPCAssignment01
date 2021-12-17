@@ -58,7 +58,7 @@ for a in range(5):
 
 sum=sum/5	
 if rank==0:
-	print(sum)
+	print("{:.2f}".format(sum))
 
 
 

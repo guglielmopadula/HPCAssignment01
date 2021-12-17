@@ -1,8 +1,6 @@
 from mpi4py import MPI
 import numpy as np
 import os
-if os.path.exists("ring.txt"):
-	os.remove("ring.txt") 
 
 comm = MPI.COMM_WORLD
 status = MPI.Status()
@@ -34,7 +32,7 @@ for i in range(10000):
 
 sum=sum/10000;
 if rank==0:
-	print(sum)
+	print("{:.6f}".format(sum))
 
 file = open("ring.txt", "a")
 print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
