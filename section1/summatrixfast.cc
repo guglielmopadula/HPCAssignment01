@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
 	double global1[size];
 	double global2[size];
 	double global[size];
-
+//randomizing the two matrices
 for(int a=0; a<10; a++){
 	start_time=MPI_Wtime();
 	for (int i=0; i<size1; i++){
@@ -54,15 +54,14 @@ for(int a=0; a<10; a++){
         }
 
 
-
-	
 	double local1[localsize];
 	double local2[localsize];
 	double local[localsize];
+//Scatter
 	MPI_Scatter(global1, localsize, MPI_DOUBLE, local1, localsize, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 	MPI_Scatter(global2, localsize, MPI_DOUBLE, local2, localsize, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 	
-
+//sum of the submatrices
 	for (int i=0; i<localsize; i++){
 		local[i]=local1[i]+local2[i];
 	}

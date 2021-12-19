@@ -184,7 +184,7 @@ for(int a=0; a<5; a++){
     	int sendcounts[numprocs2];
     	int displs[numprocs2];
 	
-	
+	//setting up variables for scatterV
 		
     	if (rank == 0) {
 		

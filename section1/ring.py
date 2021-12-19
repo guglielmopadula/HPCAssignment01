@@ -34,8 +34,8 @@ sum=sum/10000;
 if rank==0:
 	print("{:.6f}".format(sum))
 
-file = open("ring.txt", "a")
-print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=file)
-file.close()
+filew = open("ring.txt", "a")
+print('I am process '+str(rank)+' and i have received '+str(smg)+' messages. My final messages have tag '+str(10*rank)+' and value '+str(sendleft[0])+','+str(sendright[0]),file=filew)
+filew.close()	
 
 

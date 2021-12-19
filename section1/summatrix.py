@@ -14,6 +14,7 @@ size3=int(sys.argv[3])
 size=size1*size2*size3
 flag=0
 sum=0
+#setting up topology and matrix division based on input
 if int(sys.argv[4])==1:
 	numprocsizex=int(sys.argv[5])
 	numprocsizey=1
@@ -37,7 +38,7 @@ numprocsize=numprocsizex*numprocsizey*numprocsizez
 newsize1=size1
 newsize2=size2
 newsize3=size3
-
+#prepare padding if necessary
 if size1%numprocsizex!=0:
 	flag=1	
 	newsize1=math.ceil(size1/numprocsizex)*numprocsizex
@@ -54,7 +55,7 @@ localsize1=int(size1/numprocsizex)
 localsize2=int(size2/numprocsizey)
 localsize3=int(size3/numprocsizez)
 localsize=localsize1*localsize2*localsize3
-
+#randominzing and padding if necessary
 for a in range(5):
 	start_time = MPI.Wtime()
 	global1=np.random.rand(size1,size2,size3)
@@ -70,11 +71,11 @@ for a in range(5):
 			global1.shape=(newsize1,newsize2,newsize3)
 			global2.shape=(newsize1,newsize2,newsize3)
 
-
+#prepare local subarrays
 	local1=np.zeros([localsize1,localsize2,localsize3])	
 	local2=np.zeros([localsize1,localsize2,localsize3])
 	global3=np.zeros([newsize1,newsize2,newsize3])
- 
+ #prepare scatterv
 	tempType = MPI.DOUBLE.Create_subarray([newsize1,newsize2,newsize3], [localsize1,localsize2,localsize3], [0,0,0], order =    MPI.ORDER_C)
 	tempType.Commit()
 	submatrixType=tempType.Create_resized(0,8)
@@ -88,15 +89,17 @@ for a in range(5):
 			for j in range(0,size2,localsize2):
 				for k in range(0,size3,localsize3):
 					displs[counter]=j*size3+i*size2*size3+k
-					counter=counter+1	
-	topology.Scatterv([global1, counts, displs, submatrixType], [local1, localsize, MPI.DOUBLE], root = 0)
 
+#scatterv					counter=counter+1	
+	topology.Scatterv([global1, counts, displs, submatrixType], [local1, localsize, MPI.DOUBLE], root = 0)
+#scatterv
 	topology.Scatterv([global2, counts, displs, submatrixType], [local2, localsize, MPI.DOUBLE], root = 0)
 
-
+#sum
 	local=np.add(local1,local2)
+#gatherv
 	topology.Gatherv([local, localsize, MPI.DOUBLE], [global3, counts, displs, submatrixType], root=0)
-
+#adjust size if nedded
 	if flag==1:
 		global1.shape=(newsize,)
 		global2.shape=(newsize,)
@@ -119,12 +122,4 @@ if rank==0:
 
 
 
-'''
-if rank==0:
-	print('first matrix')
-	print(global1)
-	print('second matrix')
-	print(global2)
-	print('third matrix')
-	print(global3)
-'''
+
