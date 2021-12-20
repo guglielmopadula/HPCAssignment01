@@ -4,7 +4,7 @@ x=df[,1]
 y=df[,2]
 data=data.frame(x,y)
 options(bitmapType='cairo')
-jpeg(file="ring.jpeg",height = 800, width = 600,res=200)
+jpeg(file="ring.jpeg",height = 1000, width = 1000,res=200)
 plot(x,y, xlab="number of processors", ylab="time",type="p", pch=19, col="red")
 model=lm(y~x,data=data)
 xplot=(1:1000)/1000
