@@ -1,15 +1,2 @@
- I am processor 0 and i have received 6 messages. My final messages have tag 0 and have value -3 and 3 and my worktime is 3.458e-06
- I am processor 2 and i have received 6 messages. My final messages have tag 20 and have value -3 and 3 and my worktime is 3.35e-06
- I am processor 1 and i have received 6 messages. My final messages have tag 10 and have value -3 and 3 and my worktime is 3.338e-06
-I am process 2 and i have received 8 messages. My final messages have tag 20 and value -6,6
-I am process 3 and i have received 8 messages. My final messages have tag 30 and value -6,6
-I am process 0 and i have received 8 messages. My final messages have tag 0 and value -6,6
-I am process 1 and i have received 8 messages. My final messages have tag 10 and value -6,6
-I am process 0 and i have received 8 messages. My final messages have tag 0 and value -6,6
-I am process 1 and i have received 8 messages. My final messages have tag 10 and value -6,6
-I am process 2 and i have received 8 messages. My final messages have tag 20 and value -6,6
-I am process 3 and i have received 8 messages. My final messages have tag 30 and value -6,6
-I am process 3 and i have received 8 messages. My final messages have tag 30 and value -6,6
-I am process 2 and i have received 8 messages. My final messages have tag 20 and value -6,6
-I am process 1 and i have received 8 messages. My final messages have tag 10 and value -6,6
-I am process 0 and i have received 8 messages. My final messages have tag 0 and value -6,6
+ I am processor 0 and i have received 4 messages. My final messages have tag 0 and have value -1 and 1 and my worktime is 2.361e-06
+ I am processor 1 and i have received 4 messages. My final messages have tag 10 and have value -1 and 1 and my worktime is 2.442e-06

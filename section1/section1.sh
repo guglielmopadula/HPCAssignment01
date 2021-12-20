@@ -14,7 +14,7 @@ num=2;
 echo "numero di processori,tempo di esecuzione">ring.csv
 while [ $num -le 24 ]
 do
-  	pass=$(mpirun -np $num ./ring 2>/dev/null)
+  	pass=$(mpirun -np $num --map-by socket ./ring 2>/dev/null)
         echo "${num},${pass}">>ring.csv
         ((num++))
 done
