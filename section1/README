@@ -3,6 +3,7 @@ All files should be compiled using openmpi 4.1.1 and gnu 9.3.0
 The script section1.sh deletes all binaries, csv, and jpeg, compiles the two programs, executes them more times and 
 then provides necessary tables and graphs. For the details please see the report.
 
+All python scripts have been tested in a conda enviroment with all required modules installed.
 
 RING PART
 
@@ -30,7 +31,6 @@ mpirun -np 24 ./summatrix 1200 200 100 2 6 4 creates a 2D 6x4 topology and two m
 Note that the total size of the topology must be the number of processors specifed in -np.
 
 Running for summatrixfast is done by mpirun -np 24 ./summatrix size1 size2 size3
-
 
 For the python versions commands are mpirun -np 24 python summatrix.py size1 size2 size3 ndimtopology size1top size2top size3top
 and mpirun -np 24 python summatrix.py size1 size2 size3
